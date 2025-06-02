@@ -1,0 +1,171 @@
+/* src/index.css */
+
+/* ──────────────────────────────────────────────────────────────── */
+/* 1) Reset html/body/#root to 100% height and no margins */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+}
+#root {
+  height: 100%;
+  min-height: 100%;
+}
+
+/* ──────────────────────────────────────────────────────────────── */
+/* 2) Pull in Poppins, set a light gray background for the whole app */
+:root {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #213547;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Force it in case something else sneaks in a dark BG */
+body,
+#root {
+  background-color: #f5f5f5 !important;
+}
+
+/* Links */
+a {
+  color: #646cff;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* Remove default button styles so we can override */
+button {
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/* ──────────────────────────────────────────────────────────────── */
+/* 3) Full-screen flex container for login & register pages, with background image */
+.login-wrapper,
+.register-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+/* Specify login page background (put login-bg.jpg in public/) */
+.login-wrapper {
+  background-image: url("/banner.png");
+}
+/* Specify register page background (put register-bg.jpg in public/) */
+.register-wrapper {
+  background-image: url("/banner.png");
+}
+
+/* ──────────────────────────────────────────────────────────────── */
+/* 4) Shared “card” style */
+.login-card,
+.register-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 380px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.login-card h2,
+.register-card h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #213547;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+/* ──────────────────────────────────────────────────────────────── */
+/* 5) Form-group (labels + inputs) */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #555d66;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.form-group input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #213547;
+  background-color: #f7f7f7;
+}
+
+/* ──────────────────────────────────────────────────────────────── */
+/* 6) Primary button */
+.primary-button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  background-color: #1976d2;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ──────────────────────────────────────────────────────────────── */
+/* 7) Bottom “don’t have an account?” text */
+.bottom-text {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555d66;
+}
+.bottom-text a {
+  color: #646cff;
+  text-decoration: none;
+}
+.bottom-text a:hover {
+  color: #535bf2;
+}
+
+/* ──────────────────────────────────────────────────────────────── */
+/* 8) “← Back to Home” link */
+.back-home-btn {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+.back-home-btn button {
+  background-color: transparent;
+  border: none;
+  color: #646cff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
