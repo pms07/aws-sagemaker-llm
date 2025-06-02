@@ -80,8 +80,6 @@ aws sagemaker delete-endpoint --endpoint-name jumpstart-llama-3B-endpoint
 ## 5.Few UI Screens 
 ![Home Page](docs/01_homepage.png)
 
-![Register Page](docs/02_register.png)
-
 ![Login Page](docs/04_login.png)
 
 ![Dashboard Page](docs/05_dashboard.png)
