@@ -4,7 +4,7 @@ _Cloud-native Gen-AI assistant that ingests raw quarterly statements and answers
 
 | Tech | Highlights |
 |------|------------|
-| **Frontend** | Vite + React (JS) • Material-UI • Cognito Hosted UI |
+| **Frontend** | Vite + React (JS) • Material-UI |
 | **Backend**  | API Gateway (REST) • AWS Lambda • Amazon S3 |
 | **AI**       | Amazon SageMaker JumpStart (LLaMA 3 2-B) • SageMaker XGBoost Forecast |
 | **Data**     | OpenSearch Vector • DynamoDB |
