@@ -91,9 +91,15 @@ export default function Dashboard() {
             </Button>
           </Box>
 
-          <Box sx={{ mt: 3 }}>
+          {/* <Box sx={{ mt: 3 }}>
             <Button component={Link} to="/upload" variant="contained" color="primary">
               Go to File Upload
+            </Button>
+          </Box> */}
+
+          <Box sx={{ mt: 3 }}>
+            <Button component={Link} to="/ar-insights" variant="contained" color="secondary">
+              View A/R Dashboard
             </Button>
           </Box>
         </Paper>

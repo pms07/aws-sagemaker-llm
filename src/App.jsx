@@ -9,6 +9,7 @@ import Register from "./pages/Register"; // The updated register we just wrote
 import Dashboard from "./pages/Dashboard";
 import Chat from "./pages/Chat";
 import FileUpload from "./pages/FileUpload";
+import ARInsights from "./pages/ARInsights"; 
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
           </ProtectedRoute>
         }
       />
+
+      <Route path="/ar-insights" element={<ProtectedRoute><ARInsights /></ProtectedRoute>} />
 
       {/* 4) Fallback: anything else → landing */}
       <Route path="*" element={<Navigate to="/" replace />} />
